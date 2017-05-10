@@ -1,31 +1,40 @@
 \documentclass[12pt, letterpaper]{article}
 \usepackage{calligra}
+\usepackage{wrapfig}
 \usepackage[T1]{fontenc}
 \usepackage{times}
 \usepackage{graphicx}
+\usepackage{ragged2e}
 
-\usepackage[paperwidth=5.5in, paperheight=8.5in, top=0.5in, left=0.5in, right=0.5in, bottom=0.5in]{geometry}
+\usepackage[paperwidth=10.5cm, paperheight=14.8cm, top=0.25in, left=0in, right=0in, bottom=0in]{geometry}
 
 \usepackage[none]{hyphenat}
 \usepackage{array}
 
+\newcommand{\head}[1]{\vspace{10pt} 
+
+  {\large #1 }
+
+\vspace{10pt}
+}
 
 \usepackage{longtable}\usepackage{graphicx}
-\pagenumbering{gobble}
+%\pagenumbering{gobble}
 \usepackage[gen]{eurosym}
 
 \usepackage[utf8]{inputenc}
 \usepackage{pbox}
 
+
 \usepackage{libris}
 \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
-
-
+\usepackage[T1]{fontenc}
 \begin{document}
 
 {\input{titlepage}}
 \newpage
 
+\scriptsize
 \input{people}
 \newpage
 
